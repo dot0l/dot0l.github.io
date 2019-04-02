@@ -6,4 +6,7 @@ $(document).ready(function(){/*prepara las funciones para el documento actual
     $("#bloque-der").click(function(){
         $("#pan-der").slideToggle(500); //hace un slide de .5s al panel
       });
+    $("#bloque-ult").click(function(){
+        $("#pan-ult").slideToggle(500); //hace un slide de .5s al panel
+      });
 });
