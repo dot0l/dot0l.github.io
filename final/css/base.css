@@ -1,0 +1,97 @@
+@import "fonts/OpenSans-Regular.ttf";
+@import "fonts/OpenSans-Bold.ttf";
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+*{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.encabezado{
+    display: table;
+    top: 0px;
+    height: 20vh; /*vh es una medida similar al porcentaje, usado para dar alturas a un objeto.
+    por ejemplo, 15vh equivale a una altura de 15% de la pantalla del dispositivo*/
+    width: 100%;
+    background: #282828;
+}
+
+.encabezado h1{
+    display: table-cell;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+a{
+    color: #1da1f2;
+}
+body{
+    margin: 0px;
+    background: #121212;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    font-size: 13px;
+    width: 100%;
+    background: #282828;
+    padding: 5px 0px;
+}
+
+#accordion-container{
+    width: 95%;
+    margin: 15px;
+    position: absolute;
+}
+
+.accordion{
+    margin: auto;
+    background: #282828;
+    width: 46%;
+    min-height: 65px;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.active{
+    background:#282828;
+}
+
+.panel{
+    text-align: center;
+    width: 46%;
+    background-color: rgb(25, 25, 25);
+}
+
+.panel li{
+    padding: 6px;
+}
+
+/*la lista de la izquierda no se alinea*/
+#bloque-izq, #pan-izq{
+    float: left;
+}
+
+#pan-izq{
+    display: none;
+}
+
+#bloque-der, #pan-der{
+    float: right;
+}
+
+#pan-der{
+    display: none;
+}
