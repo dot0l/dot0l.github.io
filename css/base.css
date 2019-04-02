@@ -84,7 +84,7 @@ footer{
     float: left;
 }
 
-#pan-izq{
+#pan-izq, #pan-der, #pan-ult{
     display: none;
 }
 
@@ -92,6 +92,13 @@ footer{
     float: right;
 }
 
-#pan-der{
-    display: none;
+
+#bloque-ult{
+    margin: 20px auto 0px;
+    width: 100%;
+}
+
+#pan-ult{
+    margin: auto;
+    width: 100%;
 }
