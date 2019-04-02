@@ -79,7 +79,7 @@ footer{
     padding: 6px;
 }
 
-/*la lista de la izquierda no se alinea */
+/*la lista de la izquierda no se alinea*/
 #bloque-izq, #pan-izq{
     float: left;
 }
