@@ -1,6 +1,10 @@
 @import "fonts/OpenSans-Regular.ttf";
 @import "fonts/OpenSans-Bold.ttf";
 
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
