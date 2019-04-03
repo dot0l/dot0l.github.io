@@ -18,7 +18,7 @@ ul{
     height: 20vh; /*vh es una medida similar al porcentaje, usado para dar alturas a un objeto.
     por ejemplo, 15vh equivale a una altura de 15% de la pantalla del dispositivo*/
     width: 100%;
-    background: #282828;
+    background: #535353;
 }
 
 .encabezado h1{
@@ -35,11 +35,8 @@ a{
 
 body{
     margin: 0px;
-    background: #121212;
-}
-
-#pagecontent{
-    /*min-height: calc(100vh - 100px;)*/
+    background: url("../images/splash.jpg");
+    background-size: cover;
 }
 
 footer{
@@ -50,7 +47,7 @@ footer{
     text-align: center;
     font-size: 13px;
     width: 100%;
-    background: #282828;
+    background: #535353;
 }
 
 .accordion-container{
@@ -69,7 +66,7 @@ footer{
 
 .accordion{
     margin: auto;
-    background: #282828;
+    background: #535353;
     border: none;
     outline: none;
     font-weight: bold;
@@ -96,14 +93,11 @@ footer{
     height: 45px;
 }
 
-.active{
-    background:#282828;
-}
 
 .panel{
     text-align: center;
     z-index: 100000;
-    background-color: rgb(25, 25, 25);
+    background-color: #282828;
 }
 
 #accordion-desktop .panel{
