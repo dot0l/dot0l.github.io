@@ -40,6 +40,7 @@ a{
 body{
     margin: 0px;
     background: url("../images/splash.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
