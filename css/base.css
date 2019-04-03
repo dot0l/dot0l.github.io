@@ -39,7 +39,7 @@ body{
 }
 
 #pagecontent{
-    min-height: calc(100vh - 100px;)
+    /*min-height: calc(100vh - 100px;)*/
 }
 
 footer{
@@ -60,7 +60,7 @@ footer{
 }
 
 #accordion-desktop{
-    display: block; /* ! el menú desktop está desactivado para probar el menú móvil, no olvidar reactivar*/
+    display: block;
 }
 
 #accordion-mobile{
@@ -137,7 +137,11 @@ footer{
     width: 100% !important;
 }
 
-@media only screen and (max-width: 720px){/*pantallas móviles*/
+@media only screen and (max-width: 720px){
+    /*
+    pantallas móviles
+    *una versión para tablets parece no ser necesaria para este caso
+    */
     #accordion-desktop{
         display: none;
     }
