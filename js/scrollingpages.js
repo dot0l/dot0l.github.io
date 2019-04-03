@@ -37,6 +37,18 @@ jQuery( document ).ready( function() {
 		if( isOnScreen(jQuery( "#sixth-sect"))){ /* Pass element id/class you want to check */
 			$("body").attr("style", currdir+"bg6.jpg) !important");
  		}	
+		if( isOnScreen(jQuery( "#seventh-sect"))){ /* Pass element id/class you want to check */
+			$("body").attr("style", currdir+"bg7.jpg) !important");
+ 		}	
+		if( isOnScreen(jQuery( "#eigth-sect"))){ /* Pass element id/class you want to check */
+			$("body").attr("style", currdir+"bg8.jpg) !important");
+ 		}	
+		if( isOnScreen(jQuery( "#nineth-sect"))){ /* Pass element id/class you want to check */
+			$("body").attr("style", currdir+"bg9.jpg) !important");
+ 		}	
+		if( isOnScreen(jQuery( "#tenth-sect"))){ /* Pass element id/class you want to check */
+			$("body").attr("style", currdir+"bg10.jpg) !important");
+ 		}	
 	});
 
 	window.onscroll = function() {scrollFunction()};
