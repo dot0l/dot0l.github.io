@@ -139,7 +139,6 @@ footer{
 @media only screen and (max-width: 720px){
     /*
     pantallas móviles
-    *una versión para tablets parece no ser necesaria para este caso
     */
     #accordion-desktop{
         display: none;
@@ -159,7 +158,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 721px) and (max-width: 1023px){
+@media only screen and (min-width: 721px) and (max-width: 1023px){ /*tablets*/
     .encabezado h1{
         font-size: 55px;
     }

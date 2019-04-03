@@ -38,4 +38,13 @@ jQuery( document ).ready( function() {
 			$("body").attr("style", currdir+"bg6.jpg) !important");
  		}	
 	});
+
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		document.getElementById("btn-scrollup").style.display = "block";
+	} else {
+		document.getElementById("btn-scrollup").style.display = "none";
+	}
+	}
 });
