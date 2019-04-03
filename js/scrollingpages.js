@@ -25,5 +25,11 @@ jQuery( document ).ready( function() {
 		if( isOnScreen(jQuery( "#second-sect"))){ /* Pass element id/class you want to check */
 			$("body").attr("style", currdir+"bg2.jpg) !important");
  		}	
+		if( isOnScreen(jQuery( "#third-sect"))){ /* Pass element id/class you want to check */
+			$("body").attr("style", currdir+"bg3.jpg) !important");
+ 		}	
+		if( isOnScreen(jQuery( "#fourth-sect"))){ /* Pass element id/class you want to check */
+			$("body").attr("style", currdir+"bg4.jpg) !important");
+ 		}	
 	});
 });
