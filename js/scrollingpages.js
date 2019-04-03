@@ -20,7 +20,8 @@ function isOnScreen(elem) {
 $( document ).ready( function() {
 	window.addEventListener('scroll', function(e){
 		if( isOnScreen( $( "#first-sect"))){ /* Pass element id/class you want to check */
-			$("body").attr("style", currdir+"bg1.jpg) !important");
+            /*$("body").attr("style", currdir+"bg1.jpg) !important");*/
+            alert("pee");
  		}	
 		if( isOnScreen( $( "#second-sect"))){ /* Pass element id/class you want to check */
 			$("body").attr("style", currdir+"bg2.jpg) !important");
