@@ -32,37 +32,68 @@ ul{
 a{
     color: #1da1f2;
 }
+
 body{
     margin: 0px;
     background: #121212;
 }
 
+#pagecontent{
+    min-height: calc(100vh - 100px;)
+}
+
 footer{
     position: absolute;
-    text-align: center;
     bottom: 0px;
+    z-index: -10000;
+    min-height: 90px;
+    text-align: center;
     font-size: 13px;
     width: 100%;
     background: #282828;
-    padding: 5px 0px;
 }
 
-#accordion-container{
+.accordion-container{
     width: 95%;
     margin: 15px;
-    position: absolute;
+    
+}
+
+#accordion-desktop{
+    display: block; /* ! el menú desktop está desactivado para probar el menú móvil, no olvidar reactivar*/
+}
+
+#accordion-mobile{
+    display: none; /* oculta el menú móvil por defecto*/
 }
 
 .accordion{
     margin: auto;
     background: #282828;
-    width: 46%;
-    min-height: 65px;
-    font-size: 28px;
     border: none;
     outline: none;
     font-weight: bold;
     cursor: pointer;
+}
+
+#accordion-desktop .accordion{
+    width: 46%;
+    min-height: 65px;
+    font-size: 28px;
+}
+
+#accordion-mobile .accordion{
+    width: 100%;
+    min-height: 80px;
+    font-size: 44px;
+    border: 3px solid rgb(124, 124, 124);
+}
+#accordion-mobile .panel{
+    display: none;
+    overflow: hidden;
+}
+#accordion-mobile .panel li{
+    height: 45px;
 }
 
 .active{
@@ -71,15 +102,18 @@ footer{
 
 .panel{
     text-align: center;
-    width: 46%;
+    z-index: 100000;
     background-color: rgb(25, 25, 25);
+}
+
+#accordion-desktop .panel{
+    width: 46%;
 }
 
 .panel li{
     padding: 6px;
 }
 
-/*la lista de la izquierda no se alinea*/
 #bloque-izq, #pan-izq{
     float: left;
 }
@@ -95,10 +129,29 @@ footer{
 
 #bloque-ult{
     margin: 20px auto 0px;
-    width: 100%;
+    width: 100% !important;
 }
 
 #pan-ult{
     margin: auto;
-    width: 100%;
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 720px){/*pantallas móviles*/
+    #accordion-desktop{
+        display: none;
+    }
+    #accordion-mobile{
+        display: block;
+    }
+    .extradet{
+        display: none;
+    }
+    .encabezado{
+        height: 30vh;
+    }
+    
+    .encabezado h1{
+        font-size: 40px;
+    }
 }
