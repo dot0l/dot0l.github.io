@@ -17,13 +17,12 @@ function isOnScreen(elem) {
 	(height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
 }
 
-$( document ).ready( function() {
+jQuery( document ).ready( function() {
 	window.addEventListener('scroll', function(e){
-		if( isOnScreen( $( "#first-sect"))){ /* Pass element id/class you want to check */
-            /*$("body").attr("style", currdir+"bg1.jpg) !important");*/
-            alert("pee");
- 		}	
-		if( isOnScreen( $( "#second-sect"))){ /* Pass element id/class you want to check */
+		if( isOnScreen(jQuery( "#first-sect"))){ /* Pass element id/class you want to check */
+            $("body").attr("style", currdir+"bg1.jpg) !important");
+ 		}
+		if( isOnScreen(jQuery( "#second-sect"))){ /* Pass element id/class you want to check */
 			$("body").attr("style", currdir+"bg2.jpg) !important");
  		}	
 	});
