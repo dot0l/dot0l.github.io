@@ -1,0 +1,17 @@
+#welcome{
+    background: url("../img/index/indexbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.largesection{
+    min-height: 650px;
+}
+
+#carousel{
+    height: 400px;
+}
+
+.bg-darker{
+    background-color: #17191c !important;
+}
